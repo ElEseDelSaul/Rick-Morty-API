@@ -1,0 +1,19 @@
+<div class="author">
+    <h3>This application was created by Saul Medina.</h3>
+</div>
+<div class="row" infinite-scroll (scrolled)="onScrollDown()">
+    <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let character of characters">
+        <app-character class="m-1" [character]="character"></app-character>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md12 mt-5 container-notFound" *ngIf="characters.length <= 0">
+        <p>No Results...</p>
+    </div>
+</div>
+
+<button
+[ngClass]="'no-hidden'"
+*ngIf = "showGoUpButton"
+class="btn btn-dark"
+(click)="onScrollTop()">
+    Go Up!
+</button>

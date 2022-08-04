@@ -1,0 +1,9 @@
+<div class="row  justify-content-center" *ngIf="character$ | async as character">
+    <div class="col-xs-12 col-sm-6 col-md-6">
+        <app-character [character]="character"></app-character>
+    </div>
+</div>
+
+<button class="btn btn-primary btn-lg mt-4" (click)="goBack()">
+    Back!
+</button>

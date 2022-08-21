@@ -1,5 +1,5 @@
 You can visit the site in the next link:
-https://rick-morty-jk8zmmru5-elesedelsaul.vercel.app/home
+https://rick-morty-api-five.vercel.app/home
 
 ![](/src/assets/1.png)
 ![](/src/assets/2.png)
